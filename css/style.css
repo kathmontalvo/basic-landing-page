@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: #fcfff5;
+}
+
+.logo {
+  padding: 25px 0;
+}
+
+.logo img{
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 450px;
+  margin: auto;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #7a7a7a;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #a4281f;
+}
+
+/* End header */
+
+/* Welcome banner */
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/banner-inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.banner .banner-filter{
+  background-color: #d1dbbd79;
+  background-color: rgba(209, 219, 189, 0.4);
+  width: 100%;
+  height: 500px;
+}
+
+.banner .call-to-action {
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner .call-to-action p {
+  font-size: 24px;
+}
+
+.banner .call-to-action h2 {
+  width: 100%;
+  max-width: 475px;
+  height: 130px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 2rem 0;
+  padding: 45px 0;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.banner .call-to-action a {
+  background-color: rgba(0, 0, 0, 0.47);
+  color: white;
+  text-decoration: none;
+  font-size: 1.15rem;
+  padding: 10px 50px;
+
+  transition: all 0.5s ease;
+}
+
+.banner .call-to-action a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* End Welcome banner */
+
+/* Welcome text */
+.welcome {
+  width: 100%;
+  /* height: 240px; */
+  background-color: #3e606f;
+  color: white;
+  padding: 50px 0;
+  margin-top: 2px;
+}
+
+.welcome > .container {
+  height: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome .container h3 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  font-size: 1rem;
+}
+.welcome .container p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.7em;
+}
+
+/* End Welcome text */
+
+/* About us */
+
+.about-us {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 80px;
+}
+
+.about-us > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-us .container .team-img{
+  width: 100%;
+  max-width: 570px;
+}
+
+.about-us .container .team-img img{
+  width: 100%;
+}
+.about-us .container .about-text{
+  text-align: center;
+  padding: 15px;
+  max-width: 570px;
+  /* width: 50%; */
+}
+
+.about-us .container .about-text p:nth-child(1){
+  font-size: 14px;
+  color: #3c1c22;
+  border-bottom: 1px solid  #a2a2a2;
+  padding-bottom: 20px;
+}
+
+.about-us .container .about-text h3{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #0e96dd;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.about-us .container .about-text p:nth-child(3){
+  font-size: 14px;
+  color: #3c1c22;
+  padding-bottom: 20px;
+}
+
+.about-us .container .about-text p:nth-child(4){
+  font-size: 14px;
+  color: #646464;
+  padding-bottom: 30px;
+}
+
+.about-us .container .about-text a{
+  padding-top: 20px;
+  color: #0e96dd;
+}
+.about-us .container .about-text a:hover{
+  padding-top: 20px;
+  color: #34aef0a6;
+}
+
+@media all and (min-width: 768px) {
+  .about-us {
+    padding-top: 80px;
+  }
+  .about-us .team-img {
+    margin-right: 30px;
+  }
+  .about-us .team-img {
+    padding-left: 30px;
+    text-align: left;
+  }
+}
+
+/* End About us */
+
+/* Footer */
+
+footer {
+  width: 100%;
+  padding-top: 25px;
+  background-color: #193441;
+}
+.top-footer {
+  width: 100%;
+  background-color: #152d37;
+  color: #7a7a7a;
+}
+
+.top-footer .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top-footer .widget{
+  width: 100%;
+  max-width: 270px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+}
+
+.top-footer .widget h4{
+  font-size: 18px;
+  padding-bottom: 35px;
+}
+
+.top-footer .widget p{
+  font-size: 14px;
+}
+
+.bottom-footer {
+  color: #7a7a7a;
+  height: 25px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* End Footer */
